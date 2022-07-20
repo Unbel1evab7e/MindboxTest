@@ -1,22 +1,22 @@
 using System;
 using System.Threading.Tasks;
-using MindboxTest;
+using Mindbox.Library;
 using Xunit;
 
-namespace MindboxTesting
+namespace Mindbox.Tests
 {
     public class CircleTest
     {
         [Fact]
-        public async Task TestCalculateWithEmptyRadius()
+        public void TestCalculateWithEmptyRadius()
         {
             // Arrange
             var circle = new Circle();
             
-            var exception = await Assert.ThrowsAsync<ShapeException>( async () =>
+            var exception = Assert.Throws<ShapeException>(  () =>
             {
                 // Act
-                await AreaCalculator.Calculate(circle);
+                 AreaCalculator.Calculate(circle);
             });
                     
             // Assert
@@ -29,7 +29,7 @@ namespace MindboxTesting
         }
 
         [Fact]
-        public async Task TestCalculateWithCorrectRadius()
+        public void TestCalculateWithCorrectRadius()
         {
             for (int j = 0; j < 100000; j++)
             {
@@ -42,7 +42,7 @@ namespace MindboxTesting
                 var circle = new Circle{Radius = radiusValue};
             
                 //Act 
-                var result =await AreaCalculator.Calculate(circle);
+                var result =AreaCalculator.Calculate(circle);
 
                 //Assert
                 Assert.NotEqual(1,result);

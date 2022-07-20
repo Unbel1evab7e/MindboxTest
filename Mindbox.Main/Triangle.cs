@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MindboxTest
+namespace Mindbox.Library
 {
     public class Triangle: IShape
     {
@@ -22,8 +22,6 @@ namespace MindboxTest
 
         public double GetAreaValue()
         {
-            
-            
             if (Sides == null)
                 throw new ShapeException("Sides not initialized", GetType());
             

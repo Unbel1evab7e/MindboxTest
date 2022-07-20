@@ -1,0 +1,16 @@
+
+Mindbox.Library/obj/
+
+Mindbox.Main/obj/
+
+Mindbox.Tests/obj/
+
+MindboxTest.sln.DotSettings.user
+
+.idea/
+
+Mindbox.Library/bin/
+
+Mindbox.Main/bin/
+
+Mindbox.Tests/bin/

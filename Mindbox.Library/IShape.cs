@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace MindboxTest
+namespace Mindbox.Library
 {
     public interface IShape
     {

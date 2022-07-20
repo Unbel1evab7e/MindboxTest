@@ -1,10 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MindboxTest", "MindboxTest\MindboxTest.csproj", "{C447C6CB-AC46-417C-97A2-FA7324BFE6BB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindbox.Library", "Mindbox.Library\Mindbox.Library.csproj", "{C447C6CB-AC46-417C-97A2-FA7324BFE6BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MindboxTesting", "MindboxTesting\MindboxTesting.csproj", "{D0875440-8A35-4991-8D79-07ADCC7B9D87}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindbox.Tests", "Mindbox.Tests\Mindbox.Tests.csproj", "{D0875440-8A35-4991-8D79-07ADCC7B9D87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainMindbox", "MainMindbox\MainMindbox.csproj", "{2F72ECE1-10A5-48EC-98DC-7A5E39343A61}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindbox.Main", "Mindbox.Main\Mindbox.Main.csproj", "{2F72ECE1-10A5-48EC-98DC-7A5E39343A61}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

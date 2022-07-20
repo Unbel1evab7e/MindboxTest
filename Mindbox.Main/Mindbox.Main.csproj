@@ -3,10 +3,11 @@
     <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFramework>net5.0</TargetFramework>
+        <RootNamespace>Mindbox.Main</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\MindboxTest\MindboxTest.csproj" />
+      <ProjectReference Include="..\Mindbox.Library\Mindbox.Library.csproj" />
     </ItemGroup>
 
 </Project>

@@ -1,23 +1,23 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using MindboxTest;
+using Mindbox.Library;
 using Xunit;
 
-namespace MindboxTesting
+namespace Mindbox.Tests
 {
     public class TriangleTest
     {
         [Fact]
-        public async Task TestNotInitTriangleSides()
+        public void TestNotInitTriangleSides()
         {
             // Arrange
             var triangle = new Triangle();
             
-            var exception = await Assert.ThrowsAsync<ShapeException>(async () =>
+            var exception =  Assert.Throws<ShapeException>( () =>
             {
                 // Act
-                await AreaCalculator.Calculate(triangle);
+                 AreaCalculator.Calculate(triangle);
             });
             
             // Assert
@@ -71,7 +71,7 @@ namespace MindboxTesting
         }
 
         [Fact]
-        public async Task TestWithCorrectSidesCount()
+        public void TestWithCorrectSidesCount()
         {
             for (int j = 0; j < 100000; j++)
             {
@@ -86,7 +86,7 @@ namespace MindboxTesting
                 var triangle = new Triangle{Sides = sides.ToArray()};
             
                 //Act 
-                var result =await AreaCalculator.Calculate(triangle);
+                var result = AreaCalculator.Calculate(triangle);
 
                 //Assert
                 Assert.NotEqual(1,result);

@@ -1,6 +1,6 @@
 using System.ComponentModel;
 
-namespace MindboxTest
+namespace Mindbox.Library
 {
     public enum ShapesEnum 
     {

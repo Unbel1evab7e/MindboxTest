@@ -1,7 +1,7 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 
-namespace MindboxTest
+namespace Mindbox.Library
 {
     public class ShapeException : Exception
     {
